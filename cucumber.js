@@ -1,6 +1,6 @@
 module.exports = {
     default: {
-    //   parallel: 2,
+       parallel: 2,
       //format: ['html:cucumber-report.html'],
       format: [
         //'html:cucumber-report.html',
@@ -19,6 +19,6 @@ module.exports = {
         'ts-node/register'
       ],
       forceExit: true,
-      publishQuiet: true,
+      publishQuiet: true
     }
   }
