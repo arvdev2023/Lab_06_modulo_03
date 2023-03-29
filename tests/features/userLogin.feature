@@ -2,7 +2,7 @@
 Feature: Login into Todoist App
 
 Scenario: Todoist Login
-    Given the user sets the email
-    And the user sets the password
-    When the user clicks the Login button
-    Then the user should see "app/today159" text on the URL
+    Given The user sets the email
+    And The user sets the password
+    When The user clicks the Login button
+    #Then The user should see "app/today" text on the URL

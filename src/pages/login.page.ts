@@ -4,7 +4,7 @@ export class LoginPage extends BasePage {
 
     private email: string = '//div/input[@id="element-0"]';
     private password: string = '//div/input[@type="password"]';
-    private loginButton: string = '//button[@data-gtm-id="start-email-login"]';
+    private loginButton: string = 'button[data-gtm-id="start-email-login"]';
     constructor() {
         super()
     }
@@ -22,5 +22,6 @@ export class LoginPage extends BasePage {
         await this.setPassword(pass)
         await this.submitLogin()
     }
-
+    
 }
+export const loginPage = new LoginPage();

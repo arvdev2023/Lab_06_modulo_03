@@ -18,6 +18,9 @@ export class Driver {
     get Page(): Page {
         return this.page;
     }
+    async goToPage(url: string) {
+        await this.page.goto(url);
+    }
     async closeDriver() {
         await this.context.close()
         await this.browser.close()
