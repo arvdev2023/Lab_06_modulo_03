@@ -1,7 +1,7 @@
 import { ElementActions } from "../../core/element-actions";
 import { BasePage } from "../base.page";
 
-class formProject extends BasePage {
+class FormProject extends BasePage {
 
     private nameProject: string = '//div/input[@id="edit_project_modal_field_name"]'
     private checkProject: string = '//div/input[@name="is_favorite"]'
@@ -23,3 +23,4 @@ class formProject extends BasePage {
         await ElementActions.click(this.buttonSubmit)
     }
 }
+export const formProject = new FormProject()
