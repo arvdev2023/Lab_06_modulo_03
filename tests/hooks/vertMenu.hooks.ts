@@ -9,10 +9,6 @@ Before({ name: 'Before UI Hook', tags: '@addProject' }, async function () {
 
     await driverInstance.startDriver()
     await driverInstance.goToPage(configPage.linkLogin)
-    await loginPage.setUserName(configPage.userName)
-    await loginPage.setPassword(configPage.passName)
-    await loginPage.submitLogin()
-    await headerPage.isHomeIconVisible()
 
 });
 

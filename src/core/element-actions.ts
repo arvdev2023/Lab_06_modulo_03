@@ -5,6 +5,10 @@ export class ElementActions {
         await driverInstance.Page.waitForSelector(locator);
         await driverInstance.Page.click(locator);
     }
+    static async check(locator: string) {
+        await driverInstance.Page.waitForSelector(locator);
+        await driverInstance.Page.check(locator);
+    }
 
     static async setText(locator: string, text: string): Promise<void> {
         await driverInstance.Page.waitForSelector(locator);
