@@ -20,17 +20,17 @@ Given("The user logins into the app", async function () {
 Given('The user moves the mouse on ProjectLabel', async function () {
     await verticalMenu.hoverProjectLabel()
 })
-Given('The user clicks on addProject button', async function () { 
+Given('The user clicks on addProject button', async function () {
     await verticalMenu.clickAddProject()
     await formProject.formIsVisible()
 })
-Given('The user fills the text on form', async function () {
-    let nameProject = 'Nuevo Proyecto 01'
-    await formProject.setProjectName(nameProject)
+Given('The user fills {string} on the form title', async function (titleForm: string) {
+    //let nameProject = 'Nuevo Proyecto 01'
+    await formProject.setProjectName(titleForm)
 })
-/**Given('The user clicks  on Favorite Option', async function () {
+Given('The user clicks  on Favorite Option', async function () {
     await formProject.clickCheckProject()
-})**/
+})
 Given('The user clicks on Panel Option', async function () {
     await formProject.clickPanelBoard()
 })
